@@ -1,0 +1,83 @@
+/* ======================================================= */
+/* ========= TRANSPARENT CONSENT BANNER STYLING ========== */
+/* ======================================================= */
+
+.consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text */
+    padding: 20px 30px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.consent-content h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.consent-content p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.consent-content a {
+    color: #4da6ff; /* A nice blue for links */
+    text-decoration: underline;
+}
+
+.consent-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.btn, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #4da6ff; /* Primary button color */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #555; /* Secondary button color */
+    color: #eee;
+}
+
+/* For the Customize View */
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    padding: 15px 0;
+}
+.setting-text p {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+/* Simple Toggle Switch CSS */
+.switch { position: relative; display: inline-block; width: 60px; height: 34px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; }
+.slider:before { position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: white; transition: .4s; }
+input:checked + .slider { background-color: #4da6ff; }
+input:disabled + .slider { background-color: #555; cursor: not-allowed; }
+input:checked + .slider:before { transform: translateX(26px); }
+.slider.round { border-radius: 34px; }
+.slider.round:before { border-radius: 50%; }
