@@ -47,5 +47,51 @@
             Siden er lige nu under opbygning, men glæd jer til at se den vokse med vores fælles minder!
         </p>
     </div>
+    <div id="consent-banner" class="consent-banner">
+    
+    <div id="initial-view">
+        <div class="consent-content">
+            <h3>Visitor or Snooper? You Decide.</h3>
+            <p>
+                Welcome to my personal space. You can look around in private ("Snoop") or help me improve the site by sharing anonymous data ("Visit"). The choice is yours. Our transparent philosophy is explained in the <a href="/privacy-policy">Privacy Policy</a>.
+            </p>
+        </div>
+        <div class="consent-buttons">
+            <button id="accept-btn" class="btn">Become a Visitor (Accept All)</button>
+            <button id="reject-btn" class="btn">Just Snoop (Reject All)</button>
+            <button id="customize-btn" class="btn-secondary">Customize...</button>
+        </div>
+    </div>
+
+    <div id="customize-view" style="display: none;">
+         <div class="consent-content">
+            <h3>Customize Your Visit</h3>
+            
+            <div class="setting-row">
+                <div class="setting-text">
+                    <strong>Strictly Necessary Cookies</strong>
+                    <p>These are required for the site to function, like remembering this very choice. They are always on and do not store any identifiable information.</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked disabled> <span class="slider round"></span>
+                </label>
+            </div>
+            
+             <div class="setting-row">
+                <div class="setting-text">
+                    <strong>Analytics & Performance Cookies</strong>
+                     <p>Enable these to become a "Visitor." You'll be helping me understand what people find interesting by sharing anonymous data. This is completely optional.</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox"> <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="consent-buttons">
+            <button id="save-btn" class="btn">Save My Choices</button>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
